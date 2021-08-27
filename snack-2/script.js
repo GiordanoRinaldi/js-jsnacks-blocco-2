@@ -1,7 +1,7 @@
 // inserisci un numero se pari stampa se dispari stampa quello dopo
 
 var numero = parseInt(prompt("inserisci un numero"));
-if (isNaN(numero)) {
+while (isNaN(numero)) {
     var numero = parseInt(prompt("inserisci un c***o di numero"));
 }
 
