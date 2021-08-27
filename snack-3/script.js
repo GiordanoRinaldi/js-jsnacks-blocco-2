@@ -7,11 +7,24 @@ var invitati = []
 
 for (var i = 0; i < 3; i++) {
     var nomecognome = nome[Math.floor(Math.random()*3)] + cognome[Math.floor(Math.random()*3)];
-    invitati.push(nomecognome)
+
+    invitati.push(nomecognome);
+
+    while (invitati[0]==invitati[1]==invitati[2]) {
+        var nomecognome = nome[Math.floor(Math.random()*3)] + cognome[Math.floor(Math.random()*3)];
+
+        invitati.push(nomecognome);
+    }
+
 }
 
 
 
+
+
+
+
 console.log(invitati);
+
 
 
