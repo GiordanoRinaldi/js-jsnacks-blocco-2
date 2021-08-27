@@ -2,11 +2,11 @@
 
 var numero = parseInt(prompt("inserisci un numero"));
 if (isNaN(numero)) {
-    var numero = parseInt(prompt("inserisci un c***o di numero"))
+    var numero = parseInt(prompt("inserisci un c***o di numero"));
 }
 
 if ( numero%2 == 0 ) {
-    alert(numero)
+    alert(numero);
 } else {
-    alert(numero + 1 )
+    alert(numero + 1 );
 }
