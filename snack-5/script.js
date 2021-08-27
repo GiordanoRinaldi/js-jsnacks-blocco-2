@@ -10,9 +10,12 @@ while (a.length < b.length) {
     a.push( (Math.floor (Math.random() * 5) ) );
 }
 
+while (a.length > b.length) {
+    b.push( (Math.floor (Math.random() * 5) ) );
+}
+
+
 
 console.log(a)
 
 console.log(b)
-
-
