@@ -5,23 +5,21 @@ var nome = ["marco ", "luigi ", "stefano "];
 var cognome = [ "rossi", "bianchi", "neri"];
 var invitati = []
 
-for (var i = 0; i < 3; i++) {
-    var nomecognome = nome[Math.floor(Math.random()*3)] + cognome[Math.floor(Math.random()*3)];
+//for (var i = 0; i < 3; i++) {
+//    var nomecasuale = parseInt(Math.random() * nome.length);
+//    var cognomecasuale = parseInt(Math.random() * cognome.length);
+//
+//    invitati.push(nome[nomecasuale] + cognome[cognomecasuale]);
+//}
 
-    invitati.push(nomecognome);
 
-    while (invitati[0]==invitati[1]==invitati[2]) {
-        var nomecognome = nome[Math.floor(Math.random()*3)] + cognome[Math.floor(Math.random()*3)];
+while(invitati.length < 3) {
+    var nomecasuale = parseInt(Math.random() * nome.length);
+    var cognomecasuale = parseInt(Math.random() * cognome.length);
 
-        invitati.push(nomecognome);
-    }
+    invitati.push(nome[nomecasuale] + cognome[cognomecasuale])
 
 }
-
-
-
-
-
 
 
 console.log(invitati);
